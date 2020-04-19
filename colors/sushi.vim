@@ -14,6 +14,7 @@ let s:bright = g:sushi#palette.bright
 
 let s:cyan = g:sushi#palette.cyan
 let s:pink = g:sushi#palette.pink
+let s:green = g:sushi#palette.green
 
 let s:none = ['NONE', 'NONE']
 
@@ -32,6 +33,7 @@ function s:h(scope, fg, ...)
 endfunction
 
 call s:h('Normal', s:fg, s:bg)
+call s:h('None', s:none)
 
 call s:h('SushiFg', s:fg)
 call s:h('SushiBg', s:none, s:bg)
@@ -41,6 +43,7 @@ call s:h('SushiBright', s:bright)
 
 call s:h('SushiCyan', s:cyan)
 call s:h('SushiPink', s:pink)
+call s:h('SushiGreen', s:green)
 
 hi! link NonText SushiSubtle
 hi! link SpecialKey SushiSubtle
