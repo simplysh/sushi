@@ -60,6 +60,7 @@ hi! link LineNr SushiCyan
 hi! link Number SushiPink
 hi! link Boolean SushiPink
 hi! link Float SushiPink
+hi! link Constant SushiPink
 
 hi! link Underlined SushiFg
 hi! link Error SushiFg
@@ -67,7 +68,6 @@ hi! link SpellBad SushiFg
 hi! link SpellLocal SushiFg
 hi! link SpellCap SushiFg
 hi! link SpellRare SushiFg
-hi! link Constant SushiFg
 hi! link String SushiFg
 hi! link Character SushiFg
 hi! link Identifier SushiFg
