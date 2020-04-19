@@ -47,14 +47,18 @@ hi! link SpecialKey SushiSubtle
 
 hi! link Statement SushiBright
 hi! link Conditional SushiBright
+hi! link Keyword SushiBright
 
 hi! link Comment SushiCyan
 hi! link SignColumn SushiCyan
 hi! link Todo SushiCyan
 hi! link LineNr SushiCyan
 
-hi! link Underlined SushiFg
+hi! link Number SushiPink
+hi! link Boolean SushiPink
+hi! link Float SushiPink
 
+hi! link Underlined SushiFg
 hi! link Error SushiFg
 hi! link SpellBad SushiFg
 hi! link SpellLocal SushiFg
@@ -63,15 +67,11 @@ hi! link SpellRare SushiFg
 hi! link Constant SushiFg
 hi! link String SushiFg
 hi! link Character SushiFg
-hi! link Number SushiFg
-hi! link Boolean SushiFg
-hi! link Float SushiFg
 hi! link Identifier SushiFg
 hi! link Function SushiFg
 hi! link Repeat SushiFg
 hi! link Label SushiFg
 hi! link Operator SushiFg
-hi! link Keyword SushiBright
 hi! link Exception SushiFg
 hi! link PreProc SushiFg
 hi! link Include SushiFg
