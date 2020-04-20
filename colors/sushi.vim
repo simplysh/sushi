@@ -6,6 +6,12 @@ endif
 
 let colors_name = "sushi"
 
+let s:attr = {
+    \'italic': 'italic',
+    \'bold': 'bold',
+    \'underline': 'underline'
+  \}
+
 let s:fg = g:sushi#palette.fg
 let s:bg = g:sushi#palette.bg
 
@@ -23,10 +29,14 @@ function s:h(scope, fg, ...)
   let l:fg = copy(a:fg)
   let l:bg = get(a:, 1, ['NONE', 'NONE'])
 
+  let l:attr_list = filter(get(a:, 2, ['NONE']), 'type(v:val) == 1')
+  let l:special = len(l:attr_list) > 0 ? join(l:attr_list, ',') : 'NONE'
+
   let l:hl_string = [
     \ 'highlight', a:scope,
     \ 'guifg=' . l:fg[0], 'ctermfg=' . l:fg[1],
     \ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
+    \ 'gui=' . l:special, 'cterm=' . l:special,
     \]
 
   execute join(l:hl_string, ' ')
@@ -36,10 +46,12 @@ call s:h('Normal', s:fg, s:bg)
 call s:h('None', s:none)
 
 call s:h('SushiFg', s:fg)
+call s:h('SushiFgItalic', s:fg, s:none, [s:attr.italic])
 call s:h('SushiBg', s:none, s:bg)
 
 call s:h('SushiSubtle', s:subtle)
 call s:h('SushiBright', s:bright)
+call s:h('SushiBrightItalic', s:bright, s:none, [s:attr.italic])
 
 call s:h('SushiCyan', s:cyan)
 call s:h('SushiPink', s:pink)
