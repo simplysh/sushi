@@ -51,6 +51,8 @@ hi! link SpecialKey SushiSubtle
 hi! link Statement SushiBright
 hi! link Conditional SushiBright
 hi! link Keyword SushiBright
+hi! link StorageClass SushiBright
+hi! link Repeat SushiBright
 
 hi! link Comment SushiCyan
 hi! link SignColumn SushiCyan
@@ -72,7 +74,6 @@ hi! link String SushiFg
 hi! link Character SushiFg
 hi! link Identifier SushiFg
 hi! link Function SushiFg
-hi! link Repeat SushiFg
 hi! link Label SushiFg
 hi! link Operator SushiFg
 hi! link Exception SushiFg
@@ -81,7 +82,6 @@ hi! link Include SushiFg
 hi! link Define SushiFg
 hi! link Macro SushiFg
 hi! link PreCondit SushiFg
-hi! link StorageClass SushiFg
 hi! link Structure SushiFg
 hi! link Typedef SushiFg
 hi! link Type SushiFg
