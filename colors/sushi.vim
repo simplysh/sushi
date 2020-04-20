@@ -47,6 +47,7 @@ call s:h('None', s:none)
 
 call s:h('SushiFg', s:fg)
 call s:h('SushiFgItalic', s:fg, s:none, [s:attr.italic])
+call s:h('SushiFgBold', s:fg, s:none, [s:attr.bold])
 call s:h('SushiBg', s:none, s:bg)
 
 call s:h('SushiSubtle', s:subtle)
@@ -65,6 +66,11 @@ hi! link Conditional SushiBright
 hi! link Keyword SushiBright
 hi! link StorageClass SushiBright
 hi! link Repeat SushiBright
+hi! link Label SushiBright
+hi! link Exception SushiBright
+
+hi! link Identifier SushiFgItalic
+hi! link Function SushiFgItalic
 
 hi! link Comment SushiCyan
 hi! link SignColumn SushiCyan
@@ -72,9 +78,13 @@ hi! link Todo SushiCyan
 hi! link LineNr SushiCyan
 
 hi! link Number SushiPink
-hi! link Boolean SushiPink
 hi! link Float SushiPink
 hi! link Constant SushiPink
+hi! link Boolean SushiPink
+
+hi! link Type SushiFgBold
+
+hi! link String SushiGreen
 
 hi! link Underlined SushiFg
 hi! link Error SushiFg
@@ -82,13 +92,8 @@ hi! link SpellBad SushiFg
 hi! link SpellLocal SushiFg
 hi! link SpellCap SushiFg
 hi! link SpellRare SushiFg
-hi! link String SushiFg
 hi! link Character SushiFg
-hi! link Identifier SushiFg
-hi! link Function SushiFg
-hi! link Label SushiFg
 hi! link Operator SushiFg
-hi! link Exception SushiFg
 hi! link PreProc SushiFg
 hi! link Include SushiFg
 hi! link Define SushiFg
@@ -96,7 +101,6 @@ hi! link Macro SushiFg
 hi! link PreCondit SushiFg
 hi! link Structure SushiFg
 hi! link Typedef SushiFg
-hi! link Type SushiFg
 hi! link Delimiter SushiFg
 hi! link Special SushiFg
 hi! link SpecialComment SushiFg
