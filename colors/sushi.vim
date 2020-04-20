@@ -69,9 +69,6 @@ hi! link Repeat SushiBright
 hi! link Label SushiBright
 hi! link Exception SushiBright
 
-hi! link Identifier SushiFgItalic
-hi! link Function SushiFgItalic
-
 hi! link Comment SushiCyan
 hi! link SignColumn SushiCyan
 hi! link Todo SushiCyan
@@ -82,10 +79,12 @@ hi! link Float SushiPink
 hi! link Constant SushiPink
 hi! link Boolean SushiPink
 
-hi! link Type SushiFgBold
+hi! link String SushiFgItalic
 
-hi! link String SushiGreen
+hi! link Identifier SushiGreen
+hi! link Function SushiGreen
 
+hi! link Type SushiFg
 hi! link Underlined SushiFg
 hi! link Error SushiFg
 hi! link SpellBad SushiFg
