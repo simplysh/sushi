@@ -45,6 +45,10 @@ endfunction
 call s:h('Normal', s:fg, s:bg)
 call s:h('None', s:none)
 
+call s:h('SushiSelection', s:bg, s:green)
+call s:h('SushiMenu', s:bright, s:pink)
+call s:h('SushiMenuActive', s:pink, s:bright)
+
 call s:h('SushiFg', s:fg)
 call s:h('SushiFgItalic', s:fg, s:none, [s:attr.italic])
 call s:h('SushiFgBold', s:fg, s:none, [s:attr.bold])
@@ -60,6 +64,12 @@ call s:h('SushiGreen', s:green)
 
 hi! link NonText SushiSubtle
 hi! link SpecialKey SushiSubtle
+
+hi! link Visual SushiSelection
+hi! link VisualNOS SushiSelection
+
+hi! link Pmenu SushiMenu
+hi! link PmenuSel SushiMenuActive
 
 hi! link Statement SushiBright
 hi! link Conditional SushiBright
@@ -81,9 +91,8 @@ hi! link Boolean SushiPink
 
 hi! link String SushiFgItalic
 
-hi! link Identifier SushiGreen
-hi! link Function SushiGreen
-
+hi! link Identifier SushiFg
+hi! link Function SushiFg
 hi! link Type SushiFg
 hi! link Underlined SushiFg
 hi! link Error SushiFg
